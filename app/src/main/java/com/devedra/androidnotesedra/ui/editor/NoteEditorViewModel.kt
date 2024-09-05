@@ -1,13 +1,13 @@
 package com.devedra.androidnotesedra.ui.editor
 
-import androidx.lifecycle.*
+import android.view.animation.Transformation
 import com.devedra.androidnotesedra.model.Note
 import com.devedra.androidnotesedra.repository.NoteRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
-
+import androidx.lifecycle.*
 
 class NoteEditorViewModel (private val notesRepository: NoteRepository,
                            noteKey: Long,) : ViewModel() {
@@ -23,7 +23,7 @@ class NoteEditorViewModel (private val notesRepository: NoteRepository,
     val navigateToList: LiveData<Boolean>
         get() = _navigateToList
 
-    var isEdit: LiveData<Boolean> = Transformations.map(note) {
+    var isEdit: LiveData<Boolean> = note.map {
             null != it
     }
 
