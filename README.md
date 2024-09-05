@@ -46,8 +46,13 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local:
 ## Pantallas de la Aplicación
 
 A continuación, se mostrarán algunas capturas de pantalla de la aplicación:
-![Screenshot_1679693686](https://github.com/user-attachments/assets/cd75f2c6-a581-4c94-9d1d-febb09835376) ![Screenshot_1679693689](https://github.com/user-attachments/assets/25a1d644-565d-4ec3-9299-702ebb1fdf2d) ![Screenshot_1679693718](https://github.com/user-attachments/assets/85a2b1a5-ea5e-4444-851a-c3222078993f)
-![Screenshot_1679693750](https://github.com/user-attachments/assets/0a2a8d36-1d1b-4a2f-b46e-3ee089f321b3) ![Screenshot_1679693745](https://github.com/user-attachments/assets/542d244c-e641-4e3b-b5dd-e789f640447c) ![Screenshot_1679693757](https://github.com/user-attachments/assets/0e04f932-3f10-44bb-b3fc-6441f274f23a) ![Screenshot_1679693709](https://github.com/user-attachments/assets/147b739b-cf13-49b3-9313-dea9b04a5ee7)
+<img src="https://github.com/user-attachments/assets/cd75f2c6-a581-4c94-9d1d-febb09835376" alt="Screenshot_1679693686" width="250"/>
+<img src="https://github.com/user-attachments/assets/25a1d644-565d-4ec3-9299-702ebb1fdf2d" alt="Screenshot_1679693689" width="250"/>
+<img src="https://github.com/user-attachments/assets/85a2b1a5-ea5e-4444-851a-c3222078993f" alt="Screenshot_1679693718" width="250"/>
+<img src="https://github.com/user-attachments/assets/0a2a8d36-1d1b-4a2f-b46e-3ee089f321b3" alt="Screenshot_1679693750" width="250"/>
+<img src="https://github.com/user-attachments/assets/542d244c-e641-4e3b-b5dd-e789f640447c" alt="Screenshot_1679693745" width="250"/>
+<img src="https://github.com/user-attachments/assets/0e04f932-3f10-44bb-b3fc-6441f274f23a" alt="Screenshot_1679693757" width="250"/>
+<img src="https://github.com/user-attachments/assets/147b739b-cf13-49b3-9313-dea9b04a5ee7" alt="Screenshot_1679693709" width="250"/>
 
 ## Contacto
 
