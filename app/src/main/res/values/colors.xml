@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">@color/primaryColorBlue700</color>
+    <color name="colorPrimaryDark">@color/primaryDarkColorBlue800</color>
+    <color name="colorAccent">@color/secundaryAccentOrange500</color>
+
+
+    <color name="colorBackgroundHintEditText">#D1D1D1</color>
+    <color name="colorContentText">#A3A3A3</color>
+
+
+
+<!--    New EDRA COMPANY COLORS THEME-->
+    <color name="primaryColorBlue700">#344955</color>
+    <color name="primaryDarkColorBlue800">#232F34</color>
+    <color name="primaryLightColorBlue600">#4A6572</color>
+    <color name="secundaryAccentOrange500">#F9AA33</color>
+
+    <color name="colorBlackText">#000</color>
+    <color name="colorWhiteText">#fff</color>
+
+</resources>

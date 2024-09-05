@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Android Notes</string>
+    <string name="item_date_tools_text">Hoy 12:34 PM</string>
+    <string name="hint_title_edit_text">Título</string>
+    <string name="hint_content_edit_text">Nota</string>
+    <string name="hint_search_notes">Buscar Notas</string>
+    <string name="item_title_tools_text">Dominicano</string>
+    <string name="item_content_tools_text">La vida dominicana es sensacional para todos</string>
+    <string name="save">Guardar</string>
+    <string name="content_description_save">Boton para guardar la nota</string>
+    <string name="data_required">Por favor ingresar titulo y contenido</string>
+    <string name="list_message_notes">No has agregado ninguna nota.</string>
+    <string name="title_delete_note_message">Eliminar Nota</string>
+    <string name="content_delete_note_message">¿Quieres eliminar esta nota?</string>
+    <string name="cancel">No</string>
+    <string name="accept">Sí</string>
+    <string name="ok">OK</string>
+    <string name="todo">TODO</string>
+    <string name="saveNotes">saveNotes</string>
+    <string name="deleteNotes">deleteNotes</string>
+    <string name="titlebar_editor">Agregar nota</string>
+    <string name="policy_privacy">Política de Privacidad</string>
+    <string name="titlebar_list">Notas</string>
+    <string name="nameDeveloper">By EDRA</string>
+    <string name="politica_de_privacidad">Politica de Privacidad</string>
+    <string name="eliminar">Eliminar</string>
+
+    <string name="escribir_busqueda">Escribir su busqueda</string>
+    <string name="close">Cerrar</string>
+
+</resources>

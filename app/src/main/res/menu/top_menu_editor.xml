@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"    >
+    <item
+        android:id="@+id/deleteNoteButton"
+        android:icon="@drawable/outline_delete_outline_24"
+        android:title="@string/eliminar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/saveNoteBtn"
+        android:contentDescription="@string/saveNotes"
+        android:icon="@drawable/outline_done_24"
+        android:title="@string/save"
+        app:showAsAction="ifRoom" />
+
+</menu>

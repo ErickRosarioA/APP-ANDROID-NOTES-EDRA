@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/outline_search_24"
+        android:title="@string/hint_search_notes"
+        android:contentDescription="@string/hint_search_notes"
+        app:queryBackground="@null"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/politic_privacy"
+        android:icon="@drawable/privacy_tip_24px"
+        android:title="@string/politica_de_privacidad"
+        app:showAsAction="ifRoom" />
+</menu>
