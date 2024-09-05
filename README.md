@@ -37,8 +37,6 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local:
    ```bash
    git clone https://github.com/ErickRosarioA/APP-ANDROID-NOTES-EDRA.git
 
-   ## Instrucciones para ejecutar el proyecto
-
 2. Abre el proyecto en Android Studio.
 3. Asegúrate de tener configurado un dispositivo físico o un emulador con Android para probar la aplicación.
 4. Compila y ejecuta la app en tu dispositivo.
