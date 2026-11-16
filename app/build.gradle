@@ -10,20 +10,20 @@ plugins {
 android {
     signingConfigs {
         debug {
-            storeFile file('F:/ERICK_VOLUMEN (NTFS)/PERSONAL PROJECT/PLAY STORE SUBIR APPS TIENDAS/Project 1 Notes Android Essential (Completa)/Datos PlayStore/Keystore file.jks')
+            storeFile file('C:/Users/Erick/OneDrive/Desktop/PROYECTOS PERSONALES/IDEAS/Project 1 Notes Android Essential/Datos PlayStore/Keystore file.jks')
             keyAlias 'developeredra'
             keyPassword 'Erickelcano0908'
             storePassword 'Erickelcano0908'
         }
 
         release {
-            storeFile file('G:\\PERSONAL PROJECT\\PLAY STORE SUBIR APPS TIENDAS\\Project 1 Notes\\Datos PlayStore\\Keystore file.jks')
+            storeFile file('C:/Users/Erick/OneDrive/Desktop/PROYECTOS PERSONALES/IDEAS/Project 1 Notes Android Essential/Datos PlayStore/Keystore file.jks')
             keyAlias 'developeredra'
             keyPassword 'Erickelcano0908'
             storePassword 'Erickelcano0908'
         }
     }
-    compileSdk 34
+    compileSdk 36
 
     buildFeatures {
         viewBinding true
@@ -33,10 +33,11 @@ android {
 
     defaultConfig {
         applicationId "com.devedra.androidnotesedra"
-        minSdk 23
-        targetSdk 34
-        versionCode 6
-        versionName "6.0"
+        minSdk 36
+        //noinspection EditedTargetSdkVersion
+        targetSdk 36
+        versionCode 9
+        versionName "9.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

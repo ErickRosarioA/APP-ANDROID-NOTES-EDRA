@@ -1,17 +1,30 @@
 <resources>
+
     <!-- Base application theme. -->
-    <style name="Theme.AndroidNotesEDRA" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.AndroidNotesEDRA"
+        parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <!-- Primary -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
         <item name="colorOnPrimary">@color/colorWhiteText</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Accent -->
         <item name="colorAccent">@color/colorWhiteText</item>
+
+        <!-- Text -->
         <item name="android:editTextColor">@android:color/white</item>
         <item name="android:textColorHint">@android:color/white</item>
 
+        <!-- Secondary -->
         <item name="colorSecondary">@color/colorPrimary</item>
         <item name="colorSecondaryVariant">@color/colorPrimaryDark</item>
         <item name="colorOnSecondary">@color/colorWhiteText</item>
+
     </style>
 
     <style name="MessageList">
@@ -19,4 +32,5 @@
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:textColor">@color/colorContentText</item>
     </style>
+
 </resources>

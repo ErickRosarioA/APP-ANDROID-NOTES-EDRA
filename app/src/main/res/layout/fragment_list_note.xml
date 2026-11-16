@@ -9,54 +9,57 @@
             type="com.devedra.androidnotesedra.ui.list.NoteListViewModel" />
     </data>
 
-
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
         android:focusable="true"
         android:focusableInTouchMode="true">
 
+        <!-- TOP BAR -->
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/topAppBar"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                app:title="@string/titlebar_list"
+                android:background="@color/colorPrimary"
                 android:theme="@style/Toolbar"
-                style="@style/Widget.MaterialComponents.Toolbar.Primary"
-                app:menu="@menu/top_app_bar"
-                app:navigationIcon="@drawable/ic_add_24"
-                />
+                app:title="@string/titlebar_list"
+                app:titleTextColor="@color/colorWhiteText"
+                app:menu="@menu/top_app_bar" />
 
         </com.google.android.material.appbar.AppBarLayout>
 
+
+        <!-- LISTA -->
         <androidx.core.widget.NestedScrollView
             android:id="@+id/nestedScrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:animateLayoutChanges="true"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            android:paddingBottom="@dimen/nested_scroll_padding_bottom"
-            >
+            android:paddingBottom="100dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/item_grid"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:padding="6dp"
                 android:clipToPadding="false"
+                android:padding="6dp"
                 app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
-                tools:itemCount="16"
-                app:spanCount="2"
                 app:listData="@{viewModel.properties}"
-                tools:listitem="@layout/item_note"
-                />
+                app:spanCount="2"
+                tools:itemCount="16"
+                tools:listitem="@layout/item_note" />
 
         </androidx.core.widget.NestedScrollView>
 
+
+        <!-- MENSAJE LISTA VACÍA -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/messageConstrainLayout"
             android:layout_width="wrap_content"
@@ -66,10 +69,10 @@
 
             <TextView
                 android:id="@+id/messageList"
+                style="@style/MessageList"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="16dp"
-                style="@style/MessageList"
                 android:text="@string/list_message_notes"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -77,7 +80,19 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
+        <!-- BOTÓN AGREGAR NOTA -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAddNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Add"
+            android:src="@drawable/ic_add_24"
+            app:tint="@android:color/white" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </layout>

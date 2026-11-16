@@ -47,9 +47,12 @@ class NoteListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.topAppBar.setNavigationOnClickListener {
+        binding.fabAddNote.setOnClickListener {
             viewModel.navigateToEditor()
         }
+//        binding.topAppBar.setNavigationOnClickListener {
+//            viewModel.navigateToEditor()
+//        }
     }
 
     private fun appUI() {

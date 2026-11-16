@@ -3,7 +3,9 @@ package com.devedra.androidnotesedra.ui.editor
 import android.app.Application
 import android.content.Context
 import android.os.Bundle
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -59,29 +61,44 @@ class NoteEditorFragment : Fragment() {
 
         binding.topAppBar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
+
                 R.id.saveNoteBtn -> {
-                    note.updatedAt = System.currentTimeMillis()
                     binding.root.hideKeyboard()
-                    if (binding.titleEditText.editText?.text?.trim()
-                            ?.isEmpty()!! || binding.titleEditText.editText!!.text?.trim()
-                            ?.isEmpty()!!
-                    ) {
+
+                    val title = binding.titleEditText.editText
+                        ?.text
+                        ?.toString()
+                        ?.trim()
+
+                    val content = binding.contentEditText.editText
+                        ?.text
+                        ?.toString()
+                        ?.trim()
+
+                    if (title.isNullOrEmpty() || content.isNullOrEmpty()) {
+
                         Snackbar.make(
                             binding.noteEditorLayout,
                             getString(R.string.data_required),
                             Snackbar.LENGTH_SHORT
                         ).show()
+
                     } else {
-                        note.title = binding.titleEditText.editText!!.text.toString()
-                        note.content = binding.contentEditText.editText!!.text.toString()
+
+                        note.updatedAt = System.currentTimeMillis()
+                        note.title = title
+                        note.content = content
+
                         if (note.noteId == 0L) {
                             viewModel.saveNote(note)
                         } else {
                             viewModel.updateNote(note)
                         }
                     }
+
                     true
                 }
+
                 R.id.deleteNoteButton -> {
                     showMessageConfirmDelete()
                     true
